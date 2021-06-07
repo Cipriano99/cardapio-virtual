@@ -4,16 +4,13 @@ import ButtonMain from '../../../../Components/ButtonMain';
 
 import { Container } from './styles';
 
-function ButtonPedido() {
+export default function ButtonPedido() {
   const history = History();
 
   return (
     <Container>
-      <ButtonMain action={() => history.push('/pedido')}>
-        ACESSAR PEDIDO
-      </ButtonMain>
+      <ButtonMain action={() => history.goBack()}>Voltar</ButtonMain>
+      <ButtonMain action={() => history.push('/')}>Continuar</ButtonMain>
     </Container>
   );
 }
-
-export default ButtonPedido;

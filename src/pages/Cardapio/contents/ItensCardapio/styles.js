@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.section`
   width: 94%;
   min-width: 304px;
   background-color: var(--secondary);
@@ -15,9 +15,11 @@ export const Container = styled.div`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   margin: 24px auto;
+
+  opacity: 0;
 `;
 
-export const ImagemLanche = styled.div`
+export const Imagem = styled.div`
   grid-area: IMG;
 
   display: flex;
@@ -30,10 +32,11 @@ export const Img = styled.div`
     width: 96px;
     height: 96px;
     border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   }
 `;
 
-export const Lanche = styled.div`
+export const Item = styled.div`
   grid-area: DES;
 
   display: flex;
@@ -43,16 +46,16 @@ export const Lanche = styled.div`
   margin-top: 16px;
 `;
 
-export const NomeLanche = styled.h3`
+export const Nome = styled.h3`
   margin-bottom: 4px;
 `;
 
-export const DescriçãoLanche = styled.p`
+export const Descrição = styled.p`
   font-size: 10px;
   padding: 0 12px 0 0;
 `;
 
-export const PreçoLanche = styled.h4`
+export const Preço = styled.h4`
   margin: 8px 0 0;
 `;
 
