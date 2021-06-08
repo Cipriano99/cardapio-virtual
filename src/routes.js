@@ -11,7 +11,7 @@ export default function Routes() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={() => <Layout />} />
+        <Route exact path="/lanchonete" component={() => <Layout />} />
 
         <Route component={() => <Redirect to="/" />} />
       </Switch>
