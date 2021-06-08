@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Layout from './pages/Layout';
 
@@ -11,9 +6,7 @@ export default function Routes() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/lanchonete" component={() => <Layout />} />
-
-        <Route component={() => <Redirect to="/lanchonete" />} />
+        <Route exact path="/" component={() => <Layout />} />
       </Switch>
     </Router>
   );
