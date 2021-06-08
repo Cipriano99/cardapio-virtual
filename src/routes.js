@@ -5,9 +5,9 @@ import Layout from './pages/Layout';
 export default function Routes() {
   return (
     <Switch>
-      <Route exact path="/lanchonete" component={() => <Layout />} />
+      <Route exact path="/" component={() => <Layout />} />
 
-      <Route component={() => <Redirect to="lanchonete" />} />
+      <Route component={() => <Redirect to="/" />} />
     </Switch>
   );
 }
