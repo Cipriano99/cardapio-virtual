@@ -7,7 +7,7 @@ export const bebidasList = [
     name: 'Nome da bebida 01',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
-    price: 5.99,
+    price: 4.49,
     quantidade: 1,
     state: false,
   },
@@ -17,7 +17,7 @@ export const bebidasList = [
     name: 'Nome da bebida 02',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
-    price: 4.49,
+    price: 4.99,
     quantidade: 1,
     state: false,
   },
@@ -27,7 +27,7 @@ export const bebidasList = [
     name: 'Nome da bebida 03',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
-    price: 5.69,
+    price: 5.49,
     quantidade: 1,
     state: false,
   },
