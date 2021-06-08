@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { lanchesList } from '../../Data/lanchesList';
 import { sucosList } from '../../Data/sucosList';
-import { bebidasList } from '../../Data/bebidasList';
+import { cervejasList } from '../../Data/cervejasList';
 import { drinksList } from '../../Data/drinksList';
 
 import ListaPedido from '../../Pedido/contents/ListaPedido';
@@ -15,7 +15,7 @@ export default function Lista() {
   const category = [
     ...lanchesList,
     ...sucosList,
-    ...bebidasList,
+    ...cervejasList,
     ...drinksList,
   ];
 

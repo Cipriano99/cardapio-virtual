@@ -1,10 +1,10 @@
 import beer from './assets/beer.png';
 
-export const bebidasList = [
+export const cervejasList = [
   {
-    type: 'bebida',
+    type: 'cerveja',
     img: beer,
-    name: 'Nome da bebida 01',
+    name: 'Nome da cerveja 01',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
     price: 4.49,
@@ -12,9 +12,9 @@ export const bebidasList = [
     state: false,
   },
   {
-    type: 'bebida',
+    type: 'cerveja',
     img: beer,
-    name: 'Nome da bebida 02',
+    name: 'Nome da cerveja 02',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
     price: 4.99,
@@ -22,9 +22,9 @@ export const bebidasList = [
     state: false,
   },
   {
-    type: 'bebida',
+    type: 'cerveja',
     img: beer,
-    name: 'Nome da bebida 03',
+    name: 'Nome da cerveja 03',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
     price: 5.49,
@@ -32,9 +32,9 @@ export const bebidasList = [
     state: false,
   },
   {
-    type: 'bebida',
+    type: 'cerveja',
     img: beer,
-    name: 'Nome da bebida 04',
+    name: 'Nome da cerveja 04',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
     price: 7.99,

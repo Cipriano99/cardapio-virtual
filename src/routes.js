@@ -1,18 +1,13 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
 
-import Home from './pages/Home';
-import Cardapio from './pages/Cardapio';
-import Pedido from './pages/Pedido';
+import Layout from './pages/Layout';
 
 export default function Routes() {
   return (
     <Switch>
-      <Route exact path="/" component={() => <Home />} />
+      <Route exact path="/lanchonete" component={() => <Layout />} />
 
-      <Route exact path="/cardapio" component={() => <Cardapio />} />
-      <Route exact path="/pedido" component={() => <Pedido />} />
-
-      <Route component={() => <Redirect to="/" />} />
+      <Route component={() => <Redirect to="/lanchonete" />} />
     </Switch>
   );
 }

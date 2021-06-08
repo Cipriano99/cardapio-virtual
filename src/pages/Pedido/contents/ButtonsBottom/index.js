@@ -9,8 +9,7 @@ export default function ButtonPedido() {
 
   return (
     <Container>
-      <ButtonMain action={() => history.goBack()}>Voltar</ButtonMain>
-      <ButtonMain action={() => history.push('/')}>Continuar</ButtonMain>
+      <ButtonMain action={() => history.push('#')}>Concluir</ButtonMain>
     </Container>
   );
 }

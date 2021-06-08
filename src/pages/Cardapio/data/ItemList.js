@@ -3,24 +3,22 @@ import { useEffect, useState } from 'react';
 import { Animation } from '../../Data/animation';
 import ItensCardapio from '../contents/ItensCardapio';
 
-import { sucosList } from '../../Data/sucosList';
-
 import { Container } from './styles';
 
-export default function Sucos() {
+export default function Item(props) {
   const [atualizarList, setAtualizarList] = useState(false);
 
   setTimeout(() => {
     Animation();
   }, 100);
 
-  function ListSucos() {
-    return sucosList.map(
-      (lanche, index) =>
-        !lanche.state && (
+  function ListItems() {
+    return props.items.map(
+      (item, index) =>
+        !item.state && (
           <ItensCardapio
             key={index}
-            description={lanche}
+            description={item}
             update={setAtualizarList}
           />
         )
@@ -28,12 +26,12 @@ export default function Sucos() {
   }
 
   useEffect(() => {
-    ListSucos();
-  }, [atualizarList]);
+    ListItems();
+  });
 
   return (
     <Container>
-      {!atualizarList ? <ListSucos /> : setAtualizarList(!atualizarList)}
+      {!atualizarList ? <ListItems /> : setAtualizarList(!atualizarList)}
     </Container>
   );
 }

@@ -51,7 +51,7 @@ export const Nome = styled.h3`
 `;
 
 export const Descrição = styled.p`
-  font-size: 10px;
+  font-size: 12px;
   padding: 0 12px 0 0;
 `;
 

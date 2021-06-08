@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { ContainerButton, ButtonSelect } from './styles';
+import { ContainerButton, ButtonSelect, Icon, Name } from './styles';
 
-export default function ButtonSwitch({ options, functions, action }) {
+export default function NavBottom({ options, functions, action }) {
   const [menuItem, setMenuItem] = useState({
     activeItem: options[0],
     item: options,
@@ -29,7 +29,8 @@ export default function ButtonSwitch({ options, functions, action }) {
             action(functions[index]);
           }}
         >
-          {elements}
+          <Icon>{elements.icon}</Icon>
+          <Name>{elements.name}</Name>
         </ButtonSelect>
       ))}
     </ContainerButton>

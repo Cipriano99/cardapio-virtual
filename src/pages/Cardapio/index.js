@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-import TopBar from '../../Components/TopBar';
 import TitlePage from '../../Components/TitlePage';
 import Divisor from '../../Components/Divisor';
 import ButtonSwitch from '../../Components/ButtonSwitch';
@@ -15,7 +14,6 @@ export default function Home() {
 
   return (
     <Container>
-      <TopBar />
       <ButtonPedido />
       <TitlePage>Cardápio</TitlePage>
       <Divisor />
