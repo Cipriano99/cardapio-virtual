@@ -40,6 +40,7 @@ export const Delivery = () => (
       label="Forma de pagamento"
       options={options}
       placeholder="Selecione a forma de pagamento"
+      isSearchable={false}
     />
   </>
 );
@@ -54,6 +55,7 @@ export const Retirada = () => (
       label="Forma de pagamento"
       options={options}
       placeholder="Selecione a forma de pagamento"
+      isSearchable={false}
     />
   </>
 );
