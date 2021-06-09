@@ -1,8 +1,7 @@
-import { useTotalPedido } from '../../authContext';
+import { useTotalPedido } from '../../Context';
 
 import TitlePage from '../../Components/TitlePage';
 import Divisor from '../../Components/Divisor';
-import ButtonsBottom from './contents/ButtonsBottom';
 import TotalPedido from '../../Components/TotalPedido';
 
 import Lista from './data/Lista';
@@ -18,7 +17,7 @@ export default function Pedido() {
       <Divisor />
 
       {totalPedido < 1 ? (
-        <SemLista>Você ainda não adicionou nenhum item ao seu pedido.</SemLista>
+        <SemLista>Você ainda não adicionou itens ao seu pedido. 😐</SemLista>
       ) : (
         <Lista />
       )}
@@ -26,8 +25,6 @@ export default function Pedido() {
       <Divisor />
       <TotalPedido priceTotal={parseFloat(totalPedido).toFixed(2)} />
       <Divisor />
-
-      <ButtonsBottom />
     </Container>
   );
 }

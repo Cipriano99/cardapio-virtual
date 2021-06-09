@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContainerButton = styled.div`
-  width: 100%;
+  width: auto;
   height: 44px;
   display: flex;
   align-items: center;
@@ -15,8 +15,7 @@ export const ContainerButton = styled.div`
 `;
 
 export const ButtonSelect = styled.div`
-  width: auto;
-  min-width: 144px;
+  min-width: 160px;
   height: 28px;
   font-size: 16px;
   text-align: center;
@@ -24,11 +23,13 @@ export const ButtonSelect = styled.div`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin: 0 12px;
-  padding: 0 16px;
+  margin: 0 16px;
+
+  transition: all 0.3s ease-in-out;
 
   &.ativo {
     background-color: var(--primary);

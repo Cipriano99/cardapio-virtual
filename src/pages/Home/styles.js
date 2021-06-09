@@ -1,22 +1,20 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  min-height: 80vh;
-
-  padding-bottom: 3rem;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
 `;
 
 export const Header = styled.div`
-  height: 9rem;
+  height: 4rem;
   display: grid;
   place-content: center;
   font-size: 2rem;
   text-align: center;
-  padding: 0 16px;
+  padding: 0 24px;
 `;
 
 export const Logo = styled.div`
@@ -33,8 +31,10 @@ export const Logo = styled.div`
 `;
 
 export const Infomative = styled.div`
-  height: 100%;
-  margin-top: 32px;
-  padding: 0 24px;
+  padding: 0 32px;
   text-align: center;
+`;
+
+export const P = styled.p`
+  margin-bottom: 40px;
 `;

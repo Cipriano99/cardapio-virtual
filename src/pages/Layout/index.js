@@ -9,6 +9,7 @@ import { Container, Top, Main, Bottom } from './styles';
 
 function Layout() {
   const [pageOn, setPageOn] = useState(functions[0]);
+
   return (
     <Container>
       <Top>

@@ -3,7 +3,6 @@ import { useState } from 'react';
 import TitlePage from '../../Components/TitlePage';
 import Divisor from '../../Components/Divisor';
 import ButtonSwitch from '../../Components/ButtonSwitch';
-import ButtonPedido from './contents/ButtonPedido';
 
 import { buttonsControll, functions } from './data';
 
@@ -14,7 +13,6 @@ export default function Home() {
 
   return (
     <Container>
-      <ButtonPedido />
       <TitlePage>Cardápio</TitlePage>
       <Divisor />
       <ButtonSwitch

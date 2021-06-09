@@ -6,6 +6,7 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu Mono', monospace;
+    
   }
   html, #root {
     height: 100%;

@@ -14,6 +14,6 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin: 16px 0;
+  margin: 16px auto;
   padding: 0 16px;
 `;

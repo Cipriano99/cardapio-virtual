@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { AuthProvider } from './authContext';
+import { Provider } from './Context';
 import Routes from './routes';
 import GlobalStyles from './styles/GlobalStyles';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AuthProvider>
+    <Provider>
       <Routes />
       <GlobalStyles />
-    </AuthProvider>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

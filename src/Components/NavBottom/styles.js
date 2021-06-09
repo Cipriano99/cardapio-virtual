@@ -11,9 +11,9 @@ export const ContainerButton = styled.div`
 
 export const ButtonSelect = styled.div`
   height: 48px;
-  min-width: 88px;
+  min-width: 64px;
   padding: 0 4px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   background-color: var(--secondary);
   border-radius: 4px;
@@ -23,9 +23,12 @@ export const ButtonSelect = styled.div`
   justify-content: center;
   cursor: pointer;
 
+  transition: all 0.3s ease-in-out;
+
   &.ativo {
     background-color: var(--primary);
     color: var(--tertiary);
+    width: 72px;
     font-weight: 700;
   }
 `;

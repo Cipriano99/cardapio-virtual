@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from 'react';
 
 const Context = createContext();
 
-export function AuthProvider({ children }) {
+export function Provider({ children }) {
   const [totalPedido, setTotalPedido] = useState(0);
 
   return (

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useTotalPedido } from '../../../../authContext';
+import { useTotalPedido } from '../../../../Context';
 
 import {
   Container,
