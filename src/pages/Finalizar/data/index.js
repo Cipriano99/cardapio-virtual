@@ -5,15 +5,15 @@ import { Local, Delivery, Retirada } from '../data/forms';
 export const buttonsControll = ['Consumir no local', 'Delivery', 'Retirada'];
 
 export const functions = [
-  <FormPedido>
+  <FormPedido idPedido="0">
     <Local />
   </FormPedido>,
 
-  <FormPedido>
+  <FormPedido idPedido="1">
     <Delivery />
   </FormPedido>,
 
-  <FormPedido>
+  <FormPedido idPedido="2">
     <Retirada />
   </FormPedido>,
 ];

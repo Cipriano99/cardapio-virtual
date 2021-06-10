@@ -6,12 +6,28 @@ import ButtonMain from '../../../../Components/ButtonMain';
 import Divisor from '../../../../Components/Divisor';
 import TotalPedido from '../../../../Components/TotalPedido';
 
-export default function FormPedido({ children }) {
-  const { totalPedido } = useTotalPedido();
+import TypePedido from './typePedido';
 
+import { allListItems } from '../../../Data';
+
+export default function FormPedido({ children, idPedido }) {
+  const { totalPedido } = useTotalPedido();
   const formRef = useRef();
+
   const handleFormSubmit = (data) => {
-    console.log(data);
+    const itensPedido = allListItems.filter((lanche) => lanche.state);
+
+    const pedido = {
+      itens: itensPedido.map((item) => ({
+        nomeLanche: item.name,
+        quantidade: item.quantidade,
+        parcial: item.price * item.quantidade,
+      })),
+      info: data,
+    };
+
+    console.log(idPedido, pedido, totalPedido);
+    TypePedido(idPedido, pedido, totalPedido);
   };
 
   return (

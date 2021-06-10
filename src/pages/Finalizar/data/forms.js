@@ -1,8 +1,8 @@
+import { useState } from 'react';
 import cep from 'cep-promise';
 
 import Input from '../../../Components/Input';
 import Select from '../../../Components/SelectInput';
-import { useState } from 'react';
 
 const options = [
   { value: 'Cédulas', label: 'Cédulas' },
@@ -39,13 +39,20 @@ export function Delivery() {
         buscaCEP={buscaCEP}
         required
       />
-      <Input name="cidade" label="Cidade" value={resultCEP.city || ''} />
-      <Input
-        name="bairro"
-        label="Bairro"
-        value={resultCEP.neighborhood || ''}
-      />
-      <Input name="rua" label="Rua" value={resultCEP.street || ''} />
+      <Input name="cidade" label="Cidade" value={resultCEP.city} />
+
+      {resultCEP.neighborhood ? (
+        <Input name="bairro" label="Bairro" value={resultCEP.neighborhood} />
+      ) : (
+        <Input name="bairro" label="Bairro" />
+      )}
+
+      {resultCEP.street ? (
+        <Input name="rua" label="Rua" value={resultCEP.street} />
+      ) : (
+        <Input name="rua" label="Rua" />
+      )}
+
       <Input name="número" label="Número ou identificação" />
       <Input name="complemento" label="Complemento (opcional)" />
       <Select

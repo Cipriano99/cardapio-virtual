@@ -1,26 +1,16 @@
 import { useState } from 'react';
 
-import { lanchesList } from '../../Data/lanchesList';
-import { sucosList } from '../../Data/sucosList';
-import { cervejasList } from '../../Data/cervejasList';
-import { drinksList } from '../../Data/drinksList';
-
 import ListaPedido from '../../Pedido/contents/ListaPedido';
+
+import { allListItems } from '../../Data';
 
 import { Container } from './styles';
 
 export default function Lista() {
   const [atualizar, setAtualizar] = useState(true);
 
-  const category = [
-    ...lanchesList,
-    ...sucosList,
-    ...cervejasList,
-    ...drinksList,
-  ];
-
   const ListLanches = () =>
-    category.map(
+    allListItems.map(
       (lanche, index) =>
         lanche.state && (
           <ListaPedido key={index} description={lanche} update={setAtualizar} />
