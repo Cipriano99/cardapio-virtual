@@ -49,7 +49,6 @@ export function Delivery() {
       <Input name="rua" label="Rua" value={resultCEP.street || ''} />
       <Input name="número" label="Número ou identificação" />
       <Input name="complemento" label="Complemento (opcional)" />
-      <Input name="observações" label="Observações (opcional)" />
       <Select
         name="pagamento"
         label="Forma de pagamento"
@@ -57,6 +56,7 @@ export function Delivery() {
         placeholder="Selecione a forma de pagamento"
         isSearchable={false}
       />
+      <Input name="observações" label="Observações (opcional)" />
     </>
   );
 }
@@ -64,7 +64,6 @@ export function Delivery() {
 export const Retirada = () => (
   <>
     <Input name="nome" label="Nome" required />
-    <Input name="observações" label="Observações (opcional)" />
     <Select
       name="pagamento"
       label="Forma de pagamento"
@@ -72,5 +71,6 @@ export const Retirada = () => (
       placeholder="Selecione a forma de pagamento"
       isSearchable={false}
     />
+    <Input name="observações" label="Observações (opcional)" />
   </>
 );
