@@ -3,7 +3,7 @@ import { useField } from '@unform/core';
 
 import { InputComponent, BodyInput, Label } from './styles';
 
-export default function Input({ name, label, buscaCEP, ...rest }) {
+export default function Input({ name, label, type, buscaCEP, ...rest }) {
   const { fieldName, registerField } = useField(name);
   const inputRef = useRef();
 
@@ -33,7 +33,7 @@ export default function Input({ name, label, buscaCEP, ...rest }) {
       <InputComponent
         name={name}
         ref={inputRef}
-        type="text"
+        type={type || 'text'}
         placeholder=""
         onChange={name === 'cep' ? CEPbuscarFunction : null}
         {...rest}

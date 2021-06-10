@@ -34,8 +34,7 @@ export function Delivery() {
       <Input
         name="cep"
         label="CEP"
-        type="number"
-        minLength="8"
+        type="tel"
         maxLength="8"
         buscaCEP={buscaCEP}
         required

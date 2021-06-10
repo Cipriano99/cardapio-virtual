@@ -3,6 +3,8 @@ import ReactSelect from 'react-select';
 
 export const SelectOptions = styled(ReactSelect)`
   width: 100%;
+
+  margin-bottom: 16px;
 `;
 
 export const Label = styled.div`
@@ -16,6 +18,7 @@ export const colourStyles = {
     ...styles,
     backgroundColor: 'var(--secondary)',
     color: 'white',
+    boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
     height: '40px',
     width: '95%',
     margin: '4px auto',

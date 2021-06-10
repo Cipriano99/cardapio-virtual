@@ -17,7 +17,7 @@ export default function Pedido() {
       <Divisor />
 
       {totalPedido < 1 ? (
-        <SemLista>Você ainda não adicionou itens ao seu pedido. 😐</SemLista>
+        <SemLista>Você ainda não adicionou itens ao seu pedido. 👀</SemLista>
       ) : (
         <Lista />
       )}

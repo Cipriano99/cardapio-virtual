@@ -2,13 +2,13 @@ import { useState } from 'react';
 import { useTotalPedido } from '../../Context';
 
 import TitlePage from '../../Components/TitlePage';
-import Divisor from '../../Components/Divisor';
 import ButtonSwitch from '../../Components/ButtonSwitch';
+import Divisor from '../../Components/Divisor';
+import TotalPedido from '../../Components/TotalPedido';
 
 import { buttonsControll, functions } from './data';
 
 import { Container, SemLista } from './styles';
-import TotalPedido from '../../Components/TotalPedido';
 
 export default function Pedido() {
   const [finalizar, setFinalizar] = useState(functions[0]);
