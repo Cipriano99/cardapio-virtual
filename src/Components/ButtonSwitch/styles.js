@@ -4,14 +4,10 @@ export const ContainerButton = styled.div`
   width: auto;
   height: 44px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  margin-top: 8px;
   margin-bottom: 16px;
   overflow-x: scroll;
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
 `;
 
 export const ButtonSelect = styled.div`
