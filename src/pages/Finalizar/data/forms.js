@@ -1,6 +1,8 @@
+import cep from 'cep-promise';
+
 import Input from '../../../Components/Input';
-import Divisor from '../../../Components/Divisor';
 import Select from '../../../Components/SelectInput';
+import { useState } from 'react';
 
 const options = [
   { value: 'Cédulas', label: 'Cédulas' },
@@ -12,44 +14,56 @@ const options = [
 export const Local = () => (
   <>
     <Input name="nome" label="Nome" required />
-    <Input name="cpf" label="CPF" type="number" maxLength="8" required />
     <Input name="identificação" label="Identificação da mesa" required />
     <Input name="observações" label="Observações" />
   </>
 );
 
-export const Delivery = () => (
-  <>
-    <Input name="nome" label="Nome" required />
-    <Input name="cpf" label="CPF" type="number" maxLength="8" required />
-    <Input name="cep" label="CEP" required />
+export function Delivery() {
+  const [resultCEP, setResultCEP] = useState({});
+
+  function buscaCEP(value) {
+    cep(value)
+      .then((result) => setResultCEP(result))
+      .catch((error) => setResultCEP(error));
+  }
+
+  return (
     <>
-      <Divisor />
-      <br />
-      <Input name="cidade" label="Cidade" />
-      <Input name="bairro" label="Bairro" />
-      <Input name="rua" label="Rua" />
-      <Divisor />
-      <br />
+      <Input name="nome" label="Nome" required />
+      <Input
+        name="cep"
+        label="CEP"
+        minLength="8"
+        maxLength="8"
+        buscaCEP={buscaCEP}
+        required
+      />
+      <Input name="cidade" label="Cidade" value={resultCEP.city || ''} />
+      <Input
+        name="bairro"
+        label="Bairro"
+        value={resultCEP.neighborhood || ''}
+      />
+      <Input name="rua" label="Rua" value={resultCEP.street || ''} />
+      <Input name="número" label="Número ou identificação" />
+      <Input name="complemento" label="Complemento (opcional)" />
+      <Input name="observações" label="Observações (opcional)" />
+      <Select
+        name="pagamento"
+        label="Forma de pagamento"
+        options={options}
+        placeholder="Selecione a forma de pagamento"
+        isSearchable={false}
+      />
     </>
-    <Input name="número" label="Número ou identificação" />
-    <Input name="complemento" label="Complemento" />
-    <Input name="observações" label="Observações" />
-    <Select
-      name="pagamento"
-      label="Forma de pagamento"
-      options={options}
-      placeholder="Selecione a forma de pagamento"
-      isSearchable={false}
-    />
-  </>
-);
+  );
+}
 
 export const Retirada = () => (
   <>
     <Input name="nome" label="Nome" required />
-    <Input name="cpf" label="CPF" type="number" maxLength="8" required />
-    <Input name="observações" label="Observações" />
+    <Input name="observações" label="Observações (opcional)" />
     <Select
       name="pagamento"
       label="Forma de pagamento"

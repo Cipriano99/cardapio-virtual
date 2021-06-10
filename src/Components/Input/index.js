@@ -3,7 +3,7 @@ import { useField } from '@unform/core';
 
 import { InputComponent, BodyInput, Label } from './styles';
 
-export default function Input({ name, label, ...rest }) {
+export default function Input({ name, label, buscaCEP, ...rest }) {
   const { fieldName, registerField } = useField(name);
   const inputRef = useRef();
 
@@ -23,6 +23,10 @@ export default function Input({ name, label, ...rest }) {
     });
   }, [fieldName, registerField]);
 
+  function CEPbuscarFunction() {
+    inputRef.current.value.length === 8 && buscaCEP(inputRef.current.value);
+  }
+
   return (
     <BodyInput>
       <Label>{label}</Label>
@@ -31,6 +35,7 @@ export default function Input({ name, label, ...rest }) {
         ref={inputRef}
         type="text"
         placeholder=""
+        onChange={name === 'cep' ? CEPbuscarFunction : null}
         {...rest}
       />
     </BodyInput>
