@@ -6,12 +6,11 @@ export const ContainerButton = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
-  margin-bottom: 16px;
   overflow-x: scroll;
 `;
 
 export const ButtonSelect = styled.div`
-  min-width: 160px;
+  min-width: 40vw;
   height: 28px;
   font-size: 16px;
   text-align: center;
@@ -23,7 +22,7 @@ export const ButtonSelect = styled.div`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  margin: 0 16px;
+  margin: 0 8px;
 
   transition: all 0.3s ease-in-out;
 

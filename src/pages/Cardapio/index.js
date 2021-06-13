@@ -4,15 +4,15 @@ import TitlePage from '../../Components/TitlePage';
 import Divisor from '../../Components/Divisor';
 import ButtonSwitch from '../../Components/ButtonSwitch';
 
-import { buttonsControll, functions } from './data';
-
-import { Container } from './styles';
+import Data from './data';
 
 export default function Home() {
+  const { buttonsControll, functions } = Data();
+
   const [categoryOn, setCategoryOn] = useState(functions[0]);
 
   return (
-    <Container>
+    <>
       <TitlePage>Cardápio</TitlePage>
       <Divisor />
       <ButtonSwitch
@@ -21,6 +21,6 @@ export default function Home() {
         action={setCategoryOn}
       />
       {categoryOn}
-    </Container>
+    </>
   );
 }

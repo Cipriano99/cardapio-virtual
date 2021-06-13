@@ -1,19 +1,21 @@
-import logo from '../Data/assets/logo.png';
+import { useOnLanchonete } from '../../Context';
 
 import { Container, Header, Logo, Infomative, P } from './styles';
 
 export default function Home() {
+  const { onLanchonete } = useOnLanchonete();
+
   return (
     <>
       <Container>
         <Header>Bem-vindo(a) ao cardápio online</Header>
         <Logo>
-          <img src={logo} alt="Logo Lanchonete" />
+          <img src={onLanchonete.logo} alt="Logo Lanchonete" />
         </Logo>
       </Container>
 
       <Infomative>
-        <h3>Informartivo</h3>
+        <h3>Informativo</h3>
         ⬇️
         <br />
         <br />

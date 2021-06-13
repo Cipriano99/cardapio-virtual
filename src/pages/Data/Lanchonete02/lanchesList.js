@@ -1,53 +1,43 @@
-import suco from './assets/suco.png';
+import burguer from './assets/burguer.png';
 
-export const sucosList = [
+export const lanchesList = [
   {
-    type: 'suco',
-    img: suco,
-    name: 'Nome da suco 01',
+    type: 'lanche',
+    img: burguer,
+    name: 'Lanche 01',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
-    price: 2.99,
+    price: 9.99,
     quantidade: 1,
     state: false,
   },
   {
-    type: 'suco',
-    img: suco,
-    name: 'Nome da suco 02',
+    type: 'lanche',
+    img: burguer,
+    name: 'Lanche 02',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
-    price: 3.49,
+    price: 11.99,
     quantidade: 1,
     state: false,
   },
   {
-    type: 'suco',
-    img: suco,
-    name: 'Nome da suco 03',
+    type: 'lanche',
+    img: burguer,
+    name: 'Lanche 03',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
-    price: 3.99,
+    price: 16.49,
     quantidade: 1,
     state: false,
   },
   {
-    type: 'suco',
-    img: suco,
-    name: 'Nome da suco 04',
+    type: 'lanche',
+    img: burguer,
+    name: 'Lanche 04',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
-    price: 4.49,
-    quantidade: 1,
-    state: false,
-  },
-  {
-    type: 'suco',
-    img: suco,
-    name: 'Nome da suco 05',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
-    price: 4.99,
+    price: 14.99,
     quantidade: 1,
     state: false,
   },

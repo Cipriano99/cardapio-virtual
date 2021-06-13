@@ -30,7 +30,7 @@ export default function Pedido() {
         </>
       ) : (
         <>
-          <SemLista>Seu pedido está vazio. ☹️</SemLista>
+          <SemLista>Seu pedido ainda está vazio. ☹️</SemLista>
           <Divisor />
           <TotalPedido priceTotal={parseFloat(totalPedido).toFixed(2)} />
           <Divisor />

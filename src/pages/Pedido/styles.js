@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  height: 420px;
-  background-color: var(--tertiary);
-`;
-
 export const SemLista = styled.div`
   height: 128px;
   display: grid;

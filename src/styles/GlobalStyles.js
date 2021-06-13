@@ -26,10 +26,10 @@ body{
     outline: 0;
   }
 
-  :root {
+  /* :root {
     --primary: #E26D3C;
     --secondary: #FDEAE6;
     --tertiary: #FFFFFF;
     --quaternary: #404551;
-  }
+  } */
 `;

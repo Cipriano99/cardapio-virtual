@@ -6,13 +6,13 @@ import TotalPedido from '../../Components/TotalPedido';
 
 import Lista from './data/Lista';
 
-import { Container, SemLista } from './styles';
+import { SemLista } from './styles';
 
 export default function Pedido() {
   const { totalPedido } = useTotalPedido();
 
   return (
-    <Container>
+    <>
       <TitlePage>Seu Pedido</TitlePage>
       <Divisor />
 
@@ -25,6 +25,6 @@ export default function Pedido() {
       <Divisor />
       <TotalPedido priceTotal={parseFloat(totalPedido).toFixed(2)} />
       <Divisor />
-    </Container>
+    </>
   );
 }

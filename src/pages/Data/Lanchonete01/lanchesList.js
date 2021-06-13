@@ -1,40 +1,10 @@
-import drink from './assets/drink.png';
+import burguer from './assets/burguer.png';
 
-export const drinksList = [
+export const lanchesList = [
   {
-    type: 'drink',
-    img: drink,
-    name: 'Nome da drink 01',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
-    price: 4.99,
-    quantidade: 1,
-    state: false,
-  },
-  {
-    type: 'drink',
-    img: drink,
-    name: 'Nome da drink 02',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
-    price: 6.49,
-    quantidade: 1,
-    state: false,
-  },
-  {
-    type: 'drink',
-    img: drink,
-    name: 'Nome da drink 03',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
-    price: 7.99,
-    quantidade: 1,
-    state: false,
-  },
-  {
-    type: 'drink',
-    img: drink,
-    name: 'Nome da drink 04',
+    type: 'lanche',
+    img: burguer,
+    name: 'Lanche 01',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
     price: 9.99,
@@ -42,12 +12,32 @@ export const drinksList = [
     state: false,
   },
   {
-    type: 'drink',
-    img: drink,
-    name: 'Nome da drink 05',
+    type: 'lanche',
+    img: burguer,
+    name: 'Lanche 02',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
-    price: 10.99,
+    price: 11.99,
+    quantidade: 1,
+    state: false,
+  },
+  {
+    type: 'lanche',
+    img: burguer,
+    name: 'Lanche 03',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
+    price: 16.49,
+    quantidade: 1,
+    state: false,
+  },
+  {
+    type: 'lanche',
+    img: burguer,
+    name: 'Lanche 04',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui nisi, commodo sit amet tincidunt in, faucibus in orci.',
+    price: 14.99,
     quantidade: 1,
     state: false,
   },

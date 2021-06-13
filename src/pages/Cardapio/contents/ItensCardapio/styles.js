@@ -14,7 +14,7 @@ export const Container = styled.section`
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
-  margin: 24px auto;
+  margin: 0 auto 24px;
 
   opacity: 0;
 `;

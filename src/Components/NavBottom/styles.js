@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContainerButton = styled.div`
-  height: 64px;
+  height: 56px;
   width: 100%;
   max-width: 560px;
   display: flex;
@@ -11,6 +11,7 @@ export const ContainerButton = styled.div`
 
 export const ButtonSelect = styled.div`
   height: 48px;
+  width: 80px;
   min-width: 64px;
   padding: 0 4px;
   font-size: 14px;
@@ -28,7 +29,6 @@ export const ButtonSelect = styled.div`
   &.ativo {
     background-color: var(--primary);
     color: var(--tertiary);
-    width: 72px;
     font-weight: 700;
   }
 `;

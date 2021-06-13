@@ -11,18 +11,6 @@ import {
   faShare,
 } from '@fortawesome/free-solid-svg-icons';
 
-import { lanchesList } from '../Data/lanchesList';
-import { sucosList } from '../Data/sucosList';
-import { cervejasList } from '../Data/cervejasList';
-import { drinksList } from '../Data/drinksList';
-
-export const allListItems = [
-  ...lanchesList,
-  ...sucosList,
-  ...cervejasList,
-  ...drinksList,
-];
-
 export const buttonsControll = [
   {
     icon: <FontAwesomeIcon icon={faHome} />,

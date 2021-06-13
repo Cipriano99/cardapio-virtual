@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { Form } from '@unform/web';
-import { useTotalPedido } from '../../../../Context';
+import { useTotalPedido, useOnLanchonete } from '../../../../Context';
 
 import ButtonMain from '../../../../Components/ButtonMain';
 import Divisor from '../../../../Components/Divisor';
@@ -8,14 +8,13 @@ import TotalPedido from '../../../../Components/TotalPedido';
 
 import TypePedido from './typePedido';
 
-import { allListItems } from '../../../Data';
-
 export default function FormPedido({ children, idPedido }) {
+  const { onLanchonete } = useOnLanchonete();
   const { totalPedido } = useTotalPedido();
   const formRef = useRef();
 
   const handleFormSubmit = (data) => {
-    const itensPedido = allListItems.filter((lanche) => lanche.state);
+    const itensPedido = onLanchonete.cardapio.filter((lanche) => lanche.state);
 
     const pedido = {
       itens: itensPedido.map((item) => ({

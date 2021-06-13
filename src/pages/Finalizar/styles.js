@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: var(--tertiary);
   button {
     height: 32px;
     margin-top: 40px;

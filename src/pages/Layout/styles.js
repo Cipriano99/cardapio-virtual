@@ -13,6 +13,8 @@ export const Container = styled.div`
     'TOP'
     'MAI'
     'NAV';
+
+  background-color: var(--tertiary);
 `;
 
 export const Top = styled.div`

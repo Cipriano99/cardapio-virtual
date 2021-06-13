@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Container, Title } from './styles';
 
-export default function TopBar() {
+export default function TopBar({ children }) {
   return (
     <Container>
-      <Title>Lanchonete Exemplo</Title>
+      <Title>{children}</Title>
     </Container>
   );
 }
