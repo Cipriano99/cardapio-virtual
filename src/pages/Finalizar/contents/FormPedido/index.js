@@ -25,14 +25,12 @@ export default function FormPedido({ children, idPedido }) {
       info: data,
     };
 
-    console.log(idPedido, pedido, totalPedido);
-    TypePedido(idPedido, pedido, totalPedido);
+    TypePedido(idPedido, pedido, parseFloat(totalPedido).toFixed(2));
   };
 
   return (
     <Form ref={formRef} onSubmit={handleFormSubmit}>
       {children}
-      <br />
       <Divisor />
       <TotalPedido priceTotal={parseFloat(totalPedido).toFixed(2)} />
       <Divisor />

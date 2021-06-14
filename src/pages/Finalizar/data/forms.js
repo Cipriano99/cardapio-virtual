@@ -3,6 +3,8 @@ import cep from 'cep-promise';
 
 import Input from '../../../Components/Input';
 import Select from '../../../Components/SelectInput';
+import Divisor from '../../../Components/Divisor';
+import TotalPedido from '../../../Components/TotalPedido';
 
 const options = [
   { value: 'Cédulas', label: 'Cédulas' },
@@ -63,6 +65,9 @@ export function Delivery() {
         isSearchable={false}
       />
       <Input name="observações" label="Observações (opcional)" />
+      <br />
+      <Divisor />
+      <TotalPedido entrega="Delivery" priceTotal={parseFloat(5).toFixed(2)} />
     </>
   );
 }

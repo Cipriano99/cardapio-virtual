@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ContainerButton = styled.div`
   width: auto;
-  height: 44px;
+  height: 56px;
   display: flex;
   justify-content: space-between;
   margin-top: 8px;
@@ -10,7 +10,8 @@ export const ContainerButton = styled.div`
 `;
 
 export const ButtonSelect = styled.div`
-  min-width: 40vw;
+  min-width: 200px;
+  max-width: 40vw;
   height: 28px;
   font-size: 16px;
   text-align: center;
