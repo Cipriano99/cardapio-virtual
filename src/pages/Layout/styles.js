@@ -14,7 +14,7 @@ export const Container = styled.div`
     'MAI'
     'NAV';
 
-  background-color: var(--tertiary);
+  background-color: var(--bg);
 `;
 
 export const Top = styled.div`
@@ -34,9 +34,7 @@ export const Bottom = styled.div`
   width: 100%;
   max-width: 560px;
 
-  background-color: var(--secondary);
-
-  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.25);
 
   bottom: 0;
   position: fixed;

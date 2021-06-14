@@ -26,7 +26,7 @@ export const Logo = styled.div`
     max-width: 20rem;
     max-height: 20rem;
     border-radius: 24px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
   }
 `;
 

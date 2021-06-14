@@ -7,4 +7,6 @@ export const Container = styled.div`
   padding: 8px;
 `;
 
-export const Title = styled.h3``;
+export const Title = styled.h3`
+  color: var(--text);
+`;

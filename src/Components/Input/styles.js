@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const InputComponent = styled.input`
   width: 100%;
-  background: var(--secondary);
-  color: var(--quaternary);
+  background: var(--bg-input);
+  color: var(--text-input);
   text-align: center;
   font-size: 20px;
   height: 40px;

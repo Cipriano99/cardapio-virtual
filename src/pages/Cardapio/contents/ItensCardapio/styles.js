@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.section`
   width: 94%;
   min-width: 304px;
-  background-color: var(--secondary);
 
   display: grid;
   grid-template-columns: 128px auto;
@@ -12,9 +11,11 @@ export const Container = styled.section`
     'IMG DES'
     'BTN BTN';
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
   margin: 0 auto 24px;
+
+  background-color: var(--bg-lanche);
 
   opacity: 0;
 `;
@@ -32,7 +33,7 @@ export const Img = styled.div`
     width: 96px;
     height: 96px;
     border-radius: 8px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
   }
 `;
 

@@ -6,9 +6,9 @@ export const Button = styled.button`
   height: 24px;
   font-size: 16px;
   font-weight: 700;
-  background-color: var(--primary);
-  color: var(--tertiary);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  background-color: var(--bg-button);
+  color: var(--text-button);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   display: flex;
   align-items: center;

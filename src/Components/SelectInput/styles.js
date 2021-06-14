@@ -16,7 +16,7 @@ export const Label = styled.div`
 export const colourStyles = {
   control: (styles) => ({
     ...styles,
-    backgroundColor: 'var(--secondary)',
+    backgroundColor: 'var(--bg-input)',
     color: 'white',
     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
     height: '40px',
@@ -29,8 +29,8 @@ export const colourStyles = {
   option: (styles) => {
     return {
       ...styles,
-      backgroundColor: 'var(--secondary)',
-      color: 'var(--quaternary)',
+      backgroundColor: 'var(--bg-input)',
+      color: 'var(--text-input)',
       height: '32px',
       width: '96%',
       margin: '0 auto',
@@ -41,27 +41,23 @@ export const colourStyles = {
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      border: '1px solid var(--primary)',
+      border: '1px solid var(--divisor)',
 
       ':active': {
         ...styles[':active'],
-        backgroundColor: 'var(--secondary)',
+        backgroundColor: 'var(--bg-input)',
       },
 
       ':hover': {
-        backgroundColor: 'var(--secondary)',
+        backgroundColor: 'var(--divisor)',
+        color: 'white',
       },
     };
   },
-  input: (styles) => ({
-    ...styles,
-    color: 'var(--quaternary)',
-    fontSize: '20px',
-  }),
   placeholder: (styles) => ({
     ...styles,
-    color: 'var(--quaternary)',
+    color: 'var(--text)',
     fontSize: '16px',
   }),
-  singleValue: (styles) => ({ ...styles, color: 'var(--quaternary)' }),
+  singleValue: (styles) => ({ ...styles, color: 'var(--text)' }),
 };

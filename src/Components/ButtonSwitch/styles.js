@@ -15,7 +15,7 @@ export const ButtonSelect = styled.div`
   height: 28px;
   font-size: 16px;
   text-align: center;
-  background-color: var(--secondary);
+  background-color: var(--bg-button-default);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   display: flex;
@@ -28,8 +28,8 @@ export const ButtonSelect = styled.div`
   transition: all 0.3s ease-in-out;
 
   &.ativo {
-    background-color: var(--primary);
-    color: var(--tertiary);
+    background-color: var(--bg-button);
+    color: var(--text-button);
     font-weight: 700;
   }
 `;

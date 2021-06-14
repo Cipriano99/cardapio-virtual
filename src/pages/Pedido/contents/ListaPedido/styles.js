@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.section`
   width: 94%;
   min-width: 304px;
-  background-color: var(--secondary);
+  background-color: var(--bg-lanche);
 
   display: grid;
   grid-template-columns: 80px auto 120px;
@@ -30,7 +30,7 @@ export const Img = styled.div`
     width: 64px;
     height: 64px;
     border-radius: 8px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
   }
 `;
 
@@ -68,7 +68,7 @@ export const Menos = styled.div`
   display: grid;
   place-items: center;
 
-  background-color: var(--primary);
+  background-color: var(--bg-button);
   color: var(--tertiary);
   font-weight: 700;
 
@@ -92,7 +92,7 @@ export const Mais = styled.div`
   display: grid;
   place-items: center;
 
-  background-color: var(--primary);
+  background-color: var(--bg-button);
   color: var(--tertiary);
   font-weight: 700;
 

@@ -7,6 +7,7 @@ export const ContainerButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background-color: var(--bg-navigation);
 `;
 
 export const ButtonSelect = styled.div`
@@ -16,7 +17,7 @@ export const ButtonSelect = styled.div`
   padding: 0 4px;
   font-size: 14px;
   text-align: center;
-  background-color: var(--secondary);
+  color: var(--text-button-navigation-default);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -27,8 +28,8 @@ export const ButtonSelect = styled.div`
   transition: all 0.3s ease-in-out;
 
   &.ativo {
-    background-color: var(--primary);
-    color: var(--tertiary);
+    background-color: var(--bg-button-navigation);
+    color: var(--text-button-navigation);
     font-weight: 700;
   }
 `;
