@@ -33,3 +33,8 @@ export const ButtonSelect = styled.div`
     font-weight: 700;
   }
 `;
+
+export const TitleSwitch = styled.div`
+  display: flex;
+  align-items: center;
+`;

@@ -14,7 +14,7 @@ const cardapioList = [lanchesList, sucosList, cervejasList];
 export default function Lanchonete01() {
   return {
     logo,
-    nomeLanchonete: 'MyLanchonete 01',
+    nomeLanchonete: 'Lanchonete Exemplo',
     PaletaLanchonete: paleta,
     cardapio,
     cardapioNomeList,

@@ -8,7 +8,7 @@ import TotalPedido from '../../Components/TotalPedido';
 
 import { buttonsControll, functions } from './data';
 
-import { Container, SemLista } from './styles';
+import { Container, TitleSwitch, SemLista } from './styles';
 
 export default function Pedido() {
   const [finalizar, setFinalizar] = useState(functions[0]);
@@ -21,6 +21,7 @@ export default function Pedido() {
       <Divisor />
       {totalPedido > 1 ? (
         <>
+          <TitleSwitch>Como deseja receber seu pedido?</TitleSwitch>
           <ButtonSwitch
             options={buttonsControll}
             functions={functions}
@@ -36,10 +37,6 @@ export default function Pedido() {
           <Divisor />
         </>
       )}
-      <br />
-      <br />
-      <br />
-      <br />
     </Container>
   );
 }

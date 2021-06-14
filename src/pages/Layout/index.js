@@ -4,6 +4,8 @@ import { useOnLanchonete, Lanchonetes } from '../../Context';
 import TopBar from '../../Components/TopBar';
 import NavBottom from '../../Components/NavBottom';
 
+import Cipriano from './cipriano';
+
 import { buttonsControll, functions } from '../Data';
 
 import { Container, Top, Main, Bottom } from './styles';
@@ -23,7 +25,11 @@ function Layout(props) {
         <TopBar>{onLanchonete.nomeLanchonete}</TopBar>
       </Top>
 
-      <Main>{pageOn}</Main>
+      <Main>
+        {pageOn}
+
+        <Cipriano />
+      </Main>
 
       <Bottom>
         <NavBottom

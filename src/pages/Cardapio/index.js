@@ -6,6 +6,8 @@ import ButtonSwitch from '../../Components/ButtonSwitch';
 
 import Data from './data';
 
+import { TitleSwitch } from './styles';
+
 export default function Home() {
   const { buttonsControll, functions } = Data();
 
@@ -15,7 +17,9 @@ export default function Home() {
     <>
       <TitlePage>Cardápio</TitlePage>
       <Divisor />
+      <TitleSwitch>Categorias</TitleSwitch>
       <ButtonSwitch
+        title="Categorias"
         options={buttonsControll}
         functions={functions}
         action={setCategoryOn}

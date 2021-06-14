@@ -33,14 +33,12 @@ export default function Home() {
           Ao clicar em adicionar, o item irá automaticamente para o seu pedido e
           logo poderá definir quantas unidades deseja.
         </P>
-        <P>
-          Nenhuma informação pessoal ficará salva. Assim que finalizar, todos os
-          dados serão excluídos.
-        </P>
         <P>Se você recarregar qualquer página, todo o processo será perdido.</P>
+        <P>Para melhor experiência, utilize um smartphone</P>
         <P>
           <i>Bon appetit!</i>
         </P>
+        <br />
       </Infomative>
     </>
   );

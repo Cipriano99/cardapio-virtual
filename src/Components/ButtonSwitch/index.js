@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ContainerButton, ButtonSelect } from './styles';
 
-export default function ButtonSwitch({ options, functions, action }) {
+export default function ButtonSwitch({ title, options, functions, action }) {
   const [menuItem, setMenuItem] = useState({
     activeItem: options[0],
     item: options,
