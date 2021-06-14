@@ -44,8 +44,7 @@ export default function TypePedido(idPedido, pedido, totalPedido) {
 *Observações:* ${pedido.info.observações}%0A%0A
 
 *Pedido:* R$${totalPedido}%0A%0A
-*Taxa de entrega:* R$${5}.00
-
+*Taxa de entrega:* R$${5}.00%0A
 
 %0A*Total:* R$${parseFloat(totalPedido) + 5}
 
