@@ -18,14 +18,6 @@ export default function start() {
         <MenuItem onClick={() => history.push('/lanchonete')}>
           Lanchonete Exemplo
         </MenuItem>
-
-        <MenuItem onClick={() => history.push('/lanchonete')}>
-          Lanchonete Exemplo
-        </MenuItem>
-
-        <MenuItem onClick={() => history.push('/lanchonete')}>
-          Lanchonete Exemplo
-        </MenuItem>
       </MenusList>
 
       <Cipriano />
